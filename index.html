@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>The Library</h1>
+    </header>
+    <div id="input-container">
+      <h2>Add New Book</h2>
+      <label for="title"
+        >Title:
+        <input type="text" id="title" class="input" />
+      </label>
+      <label for="author"
+        >Author:
+        <input type="text" id="author" class="input" />
+      </label>
+      <label for="pages"
+        >Pages:
+        <input type="number" id="pages" class="input" placeholder="256" />
+      </label>
+      <select name="read-status" class="input" id="read-status">
+        <option value="not yet started">I want to read this book</option>
+        <option value="completed">I've read this book</option>
+      </select>
+      <button id="add-book">Add Book</button>
+    </div>
+
+    <div id="container"></div>
+
+    <script src="./library.js"></script>
+  </body>
+</html>

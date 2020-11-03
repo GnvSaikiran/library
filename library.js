@@ -16,8 +16,6 @@ function addBookToLibrary(book) {
 	myLibrary.push(book);
 }
 
-let domLength = 0;
-
 // displays books in the browser
 function displayBooks() {
 	let container = document.querySelector("#container");

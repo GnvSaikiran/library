@@ -84,7 +84,7 @@ function displayBooks() {
 }
 
 let dune = new Book("Dune", "Frank Herbert", 412, "not yet started");
-let hobbit = new Book("The Hobbit", "J. R. R. Tolkien", 295, "not yet started");
+let hobbit = new Book("The Hobbit", "J. R. R. Tolkien", 310, "not yet started");
 addBookToLibrary(dune);
 addBookToLibrary(hobbit);
 

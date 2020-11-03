@@ -27,8 +27,7 @@ function displayBooks() {
 		let card = document.createElement("div");
 		card.classList.add("card");
 		card.dataset.index = i;
-		console.log(`index: ${card.dataset.index}`);
-		console.log(`Length: ${myLibrary.length}`);
+
 		let title = document.createElement("h3");
 		title.textContent = myLibrary[i].title;
 		let author = document.createElement("p");
@@ -76,9 +75,7 @@ function displayBooks() {
 			// so deleting cards can be handled properly.
 			for (let i = 0; i < children.length; i++) {
 				children[i].dataset.index = i;
-				console.log(children[i].dataset.index)
 			}
-			console.table(myLibrary);
 		});
 	}
 }

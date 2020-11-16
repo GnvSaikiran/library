@@ -2,13 +2,26 @@
 let myLibrary = [];
 
 // cretes book objects
-function Book(title, author, pages, bookStatus) {
-	this.title = title;
-	this.author = author;
-	this.pages = pages;
-	this.readStatus = bookStatus;
+// function Book(title, author, pages, bookStatus) {
+// 	this.title = title;
+// 	this.author = author;
+// 	this.pages = pages;
+// 	this.readStatus = bookStatus;
 
-	this.info = () => `The ${this.title} by ${this.author}, ${this.pages} pages, ${this.readStatus}`
+// 	this.info = () => `The ${this.title} by ${this.author}, ${this.pages} pages, ${this.readStatus}`
+// }
+
+class Book {
+	constructor(title, author, pages, bookStatus) {
+		this.title = title;
+		this.author = author;
+		this.pages = pages;
+		this.readStatus = bookStatus;
+	}
+
+	info() {
+		return `The ${this.title} by ${this.author}, ${this.pages} pages, ${this.readStatus}`;
+	}
 }
 
 // adds book to the myLibrary array
